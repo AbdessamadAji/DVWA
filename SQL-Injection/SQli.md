@@ -69,3 +69,22 @@ So let's put our hands in. I intercepted the request via Burp Suite and injected
 And the passwords are appearing.
 
 <img width="1175" height="807" alt="Screenshot from 2026-02-02 19-08-49" src="https://github.com/user-attachments/assets/a53124d1-367b-4f9c-a782-69c51843590d" />
+
+# Cracking the Passwords
+
+By just seeing it looks like MD5, taking the example of: `098f6bcd4621d373cade4e832627b4f6`
+
+I'm lazy now so let's try something like CrackStation.
+
+<img width="1202" height="381" alt="image" src="https://github.com/user-attachments/assets/d25392f9-d619-4e73-ba8a-7c98935a02d2" />
+
+And doing exactly the same thing for all the passwords, we got:
+```
+admin:test
+gordonb:abc123
+1337:charley
+pablo:letmein
+smithy:password
+```
+
+
