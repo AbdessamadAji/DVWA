@@ -45,3 +45,13 @@ pic here
 
 So I think there is an issue with the lab — maybe it’s outdated, because we can’t use Pastebin anymore for this purpose.
 
+MEDIUM:
+after examining the csp/ , and there is a nonce , A nonce (number used once) is a random value generated per page load.
+basically Only scripts that contain this exact nonce are allowed to run.
+so our script should contain that nonce , something like:
+<script nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA="> alert(1); </script>
+
+but since pastebin isn't working as expected , there is nothing much I can do here
+
+HIGH:
+
